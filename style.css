@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppons:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: century-gothic, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186, 255);
+}
+
+.sidebar:hover {
+    width: 240px;
+    transition: 0.5s;
+}
+
+.logo {
+    width: 100px; 
+    height: 100px; 
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 200px 0;
+}
+
+.menu li {
+    padding: 1rem;
+    /* margin: 8px 0; */
+    margin: 0 0 10px 0; 
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active {
+    background: #e0e0e058;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span {
+    overflow: hidden;
+}
+
+.menu a i {
+    font-size: 1.2rem;
+}
+
+.main--content {
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header--title {
+    color: rgba(113, 99, 186, 255);
+}
+
+.header--wrapper h2{
+    text-align: center;
+}
+
+.news-list {
+    font-size: 17px;
+    margin-left: -50px;
+}
+
+#main--content--club h2 {
+    font-size: 30px;
+    /* Adjust the font size as needed */
+    color: #0bb9f8;
+    /* Change the text color */
+    margin-bottom: 20px;
+    /* Add space below the title */
+    margin-left: 10px;
+}
+
+#main--content--club p {
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+/* CSS for the embedded articles section title */
+#articles h2 {
+    font-size: 30px; /* Adjust the font size as needed */
+    color: #0bb9f8; /* Change the text color */
+    margin-bottom: 20px; /* Add space below the title */
+    margin-left: 10px;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    /* Add space between image and box */
+    display: block;
+}
+
+/* Create two equal columns that float next to each other with space between them */
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 265px;
+    margin-left: 30px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Change background color on hover */
+.column:hover {
+    background-color: #ddd;
+}
+
+.column p {
+    font-size: 15px;
+    /* Adjust the font size as needed */
+    font-weight: 500;
+    /* Make the text bold */
+    margin-top: 10px;
+    /* Add space above the paragraph */
+    color: black;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.search--box {
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.search--box input {
+    background: transparent;
+    padding: 10px;
+}
+
+.search--box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search--box i:hover {
+    transform: scale(1.2);
+}
