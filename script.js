@@ -12,19 +12,6 @@ function retrieve(e) {
 
     const apiUrl = `https://newsapi.org/v2/everything?q=${fixedTopic}&apiKey=${apiKey}`;
 
-    // news from techCrunch
-    //const apiUrl = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=112fbf65a16f4c999662bd0dc27b35d3";
-
-    // multiple fixed topics
-    //const topics = ['women in computing'];
-    //const combinedTopics = topics.join('|'); // Combine topics with logical OR operator
-    //const apiUrl = `https://newsapi.org/v2/everything?q=${combinedTopics}&apiKey=${apiKey}`;
-
-    // taking multiple key words and generating query results from that
-    //const specificQuery = '"women" "technology" "female"';
-    //const apiUrl = `https://newsapi.org/v2/everything?q=${encodeURIComponent(specificQuery)}&apiKey=${apiKey}`;
-
-
     console.log(fixedTopic);
     fetch(apiUrl).then((res) => {
         return res.json()
@@ -55,3 +42,16 @@ function retrieve(e) {
         newsList.appendChild(ul);
     });
 }
+
+
+    // news from techCrunch
+    //const apiUrl = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=112fbf65a16f4c999662bd0dc27b35d3";
+
+    // multiple fixed topics
+    //const topics = ['women in computing'];
+    //const combinedTopics = topics.join('|'); // Combine topics with logical OR operator
+    //const apiUrl = `https://newsapi.org/v2/everything?q=${combinedTopics}&apiKey=${apiKey}`;
+
+    // taking multiple key words and generating query results from that
+    //const specificQuery = '"women" "technology" "female"';
+    //const apiUrl = `https://newsapi.org/v2/everything?q=${encodeURIComponent(specificQuery)}&apiKey=${apiKey}`;
