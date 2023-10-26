@@ -104,15 +104,25 @@ body {
     margin-left: 10px;
 }
 
+#main--content--club h4 {
+    font-size: 23px;
+    color: rgba(113, 99, 186, 255);
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+#main--content--club h5 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
 #main--content--club p {
     font-size: 17px;
     margin-left: 10px;
 }
 
-.qrcode {
-    width: 100px; /* Set the desired width */
-    height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
-}
 
 .search--box {
     background: rgb(237, 237, 237);
@@ -139,18 +149,3 @@ body {
     transform: scale(1.2);
 }
 
-.social-icons {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding: 10px;
-    border-top: 1px solid #ccc;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    font-size: 24px;
-    color: #333;
-}
