@@ -13,6 +13,7 @@ body {
     display: flex;
     background: #ebe9e9;
     /* Background color */
+    margin: 0;
 }
 
 .sidebar {
@@ -98,7 +99,7 @@ body {
     text-align: center;
 }
 
-.collapsible + .content {
+.collapsible+.content {
     display: none;
 }
 
@@ -114,7 +115,8 @@ body {
     text-align: left;
     outline: none;
     font-size: 18px;
-    margin-bottom: 18px; /* Add margin-bottom to create space between collapsible sections */
+    margin-bottom: 18px;
+    /* Add margin-bottom to create space between collapsible sections */
 }
 
 .collapsible:after {
@@ -144,6 +146,38 @@ h2 {
     margin-bottom: 10px;
     margin-top: 0px;
     margin-left: 10px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 15px auto;
+    margin-right: 350px;
+    overflow: hidden;
+}
+
+.text-container {
+    float: left;
+    width: 65%;
+    /* Adjust the width as needed */
+    padding: 20px;
+    padding-right: 10px;
+    /* Adjust the right padding as needed */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.image-container {
+    float: right;
+    width: 220px;
+    /* Adjust the width as needed */
+    height: auto;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .content p {
